@@ -79,10 +79,10 @@ Claude should analyze the image and prepare the production prompt using the AI V
 
 ## Default model and parameters
 
-- Default model: `gpt-image-2.5-sunburst`.
+- Default model: `gpt-image-2.5-sunburst` (recommended for fidelity and detailed edits).
 - Default quality: `high`.
 - Default format: PNG.
-- Supported models: `gpt-image-2.5-sunburst`, `gpt-image-2.5-flare`, and `gpt-image-2`.
+- Supported models: `gpt-image-2.5-sunburst` and `gpt-image-2.5-flare`.
 - The API controls accepted sizes, output quality and cost. See https://developers.openai.com/api/docs/guides/image-generation.
 
 ## Troubleshooting
