@@ -2,35 +2,35 @@
 
 A practical Skills library for Claude Code and other AI coding agents: image analysis, visual reference analysis, prompt engineering, product and furniture photography, lighting, camera composition, material rendering, image editing, product preservation, and quality control.
 
-## Install
+## Install all skills in Claude Code
 
-Install the complete library:
+Run this command from your project directory:
 
 ```bash
-npx skills add ijs69/ai-visual-production
+npx skills add ijs69/ai-visual-production --skill '*' -a claude-code -y
 ```
 
-Install only the main skill:
+## Install only the main skill
 
 ```bash
-npx skills add ijs69/ai-visual-production --skill ai-visual-production
+npx skills add ijs69/ai-visual-production --skill ai-visual-production -a claude-code -y
 ```
 
 ## Skills
 
-- `ai-visual-production` — main router, workflows, references, and detailed guidance.
-- `image-analysis`
-- `reference-analysis`
-- `prompt-engineering`
-- `product-photography`
-- `lighting-design`
-- `camera-composition`
-- `material-rendering`
-- `image-editing`
-- `product-preservation`
-- `quality-control`
+- `ai-visual-production` — main art-direction system, workflows, references, and routing.
+- `image-analysis` — structured inspection of source images.
+- `reference-analysis` — role-based analysis of multiple references.
+- `prompt-engineering` — precise generation and editing prompts.
+- `product-photography` — commercial product and furniture photography.
+- `lighting-design` — coherent studio and product lighting.
+- `camera-composition` — viewpoint, perspective, framing and crop.
+- `material-rendering` — faithful textures and surface behavior.
+- `image-editing` — controlled editing of existing images.
+- `product-preservation` — protection of product identity and construction.
+- `quality-control` — visual fidelity and artifact review.
 
-The main skill includes workflows, checklists, reusable prompt templates, and detailed specialist modules.
+The main skill includes a mandatory production workflow and links the specialist skills. Its `WORKFLOWS.md` and `REFERENCES.md` provide repeatable processes, prompt structure, and quality checklists.
 
 ## Core rule
 
