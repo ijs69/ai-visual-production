@@ -40,7 +40,7 @@ function cleanFilename(value, extension, index, total, timestamp) {
     ? path.basename(value.trim())
     : "ai-visual";
   const stem = raw.replace(/\.[^.]+$/, "")
-    .replace(/[<>:"/\\|?*\x00-\x1F]/g, "-")
+    .replace(/[<>:"\/\\|?*\x00-\x1F]/g, "-")
     .replace(/\.+$/g, "")
     .slice(0, 90) || "ai-visual";
   const suffix = total > 1 ? `-${index + 1}` : "";
