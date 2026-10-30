@@ -33,7 +33,8 @@ $serverConfig = [pscustomobject]@{
 }
 
 $config.mcpServers | Add-Member -MemberType NoteProperty -Name "openai-images" -Value $serverConfig -Force
-$config | ConvertTo-Json -Depth 20 | Set-Content -Path $configPath -Encoding UTF8
+$json = $config | ConvertTo-Json -Depth 20
+[System.IO.File]::WriteAllText($configPath, $json, [System.Text.UTF8Encoding]::new($false))
 
 Write-Host "OpenAI Images MCP server added to $configPath" -ForegroundColor Green
 Write-Host "The API key is referenced through OPENAI_API_KEY and is not written into .mcp.json."
