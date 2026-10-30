@@ -1,6 +1,6 @@
 # Connect OpenAI image generation to Claude Code
 
-This integration adds two MCP tools to Claude Code:
+This integration adds two MCP tools to Claude Code using OpenAI GPT Image 2.5:
 - `generate_image` — create new images.
 - `edit_image` — edit a local image using a prompt and optional visual references.
 
@@ -46,7 +46,7 @@ Run this once, replacing the example with your own key:
 setx OPENAI_API_KEY "YOUR_OPENAI_API_KEY"
 ```
 
-Close the terminal and open a new one so Windows exposes the new environment variable to Claude Code. Never paste the key into GitHub, source files, or `.mcp.json`.
+Close the terminal and open a new one so Windows exposes the new environment variable to Claude Code. Never paste the key into GitHub, source files, `.mcp.json`, or this chat.
 
 ### 4. Register the MCP server
 
@@ -66,7 +66,7 @@ Start Claude Code from the project root. Approve the project MCP server when Cla
 /mcp
 ```
 
-Check that `openai-images` is connected.
+Check that `openai-images` is connected and exposes `generate_image` and `edit_image`.
 
 ## Use it
 
