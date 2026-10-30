@@ -37,3 +37,10 @@ The main skill includes a mandatory production workflow and links the specialist
 When editing an existing product image, preserve the product's geometry, proportions, construction, materials, and recognizable details unless the user explicitly requests a change.
 
 This repository contains instructions and workflows, not an image-generation engine. Actual generation or editing depends on the tools available to the agent.
+
+## Generate and edit images directly from Claude Code
+
+The repository also includes a local OpenAI Images MCP server. It exposes `generate_image` and `edit_image`, returns image previews to Claude, and saves output files in the active project's `generated-images/` folder.
+
+Follow [MCP-SETUP.md](MCP-SETUP.md) to install it. This integration calls the OpenAI Images API using your own API key; API usage is billed separately from ChatGPT and it is not a bridge to an existing ChatGPT conversation.
+
